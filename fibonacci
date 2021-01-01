@@ -1,0 +1,11 @@
+def fibo(n):
+    a = int(n)
+    b = 1
+    while a > 0:
+        a = a - 1
+        c = b + 1
+        b = c + b
+    print(b)
+
+n = input()
+fibo(n)
