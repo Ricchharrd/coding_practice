@@ -1,0 +1,19 @@
+import string
+
+find_the = input()
+
+find_the = find_the.split(' ')
+
+for i in range(len(find_the)):
+    find_the[i] = find_the[i].strip(string.punctuation)
+    find_the[i] = "<" + find_the[i] + ">"
+
+count = 0
+
+for a in range(len(find_the)):
+    if find_the[a] == "<the>":
+        count += 1
+    else:
+        count += 0
+
+print(count)
